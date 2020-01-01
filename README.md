@@ -1,4 +1,3 @@
-
 # Programming Languages Study
 
 This repository contains notes and code generated as part of a study of programming language theory
@@ -8,36 +7,50 @@ This is an independent study as a part of GVSU's Computer Information Systems ma
 
 ## Plan of Study
 
-(Subject to change)
-
 The goals of this study are to learn the basics of programming language theory, pick up a few new
 languages, and dabble with implementing a language. To that end, I will write a simple but
-non-trivial program in each language under study, go through Thornsten Ball's [_Writing an
-Interpreter in Go_](https://interpreterbook.com/), and produce a writeup on what I've learned.
+non-trivial program in each language under study, go through Robert Nystrom's [_Crafting
+Interpreters_](http://craftinginterpreters.com/contents.html), and produce a writeup on what I've
+learned.
 
 I come from a strong background in C with familiarity with a number of languages. Languages to study
 in this course will include:
 
-- Go
-- Haskell
-- Rust
-- Clojure
+* Go
+* Haskell
+* Rust
+* Clojure
+
+The plan outlined here is aspirational. As an independent study, my goal is to set my sights high
+and execute as much as I can.
 
 ## Schedule
 
-|              | Jan 6 | Jan 13 | Jan 20 | Jan 27  | Feb 3   | Feb 10  | Feb 17  | Feb 24 |
-| ------------ | ----- | ------ | ------ | ------- | ------- | ------- | ------- | ------ |
-| **Reading**  | tbd   | tbd    | tbd    | tbd     | tbd     | tbd     | tbd     | tbd    |
-| **Language** | Go    | Go     | Go     | Haskell | Haskell | Haskell | Haskell | Rust   |
-| **WAI**      | tbd   | tbd    | tbd    | tbd     | tbd     | tbd     | tbd     | tbd    |
+|                 | Jan 6            | Jan 13             | Jan 20                  | Jan 27  | Feb 3   | Feb 10  | Feb 17   | Feb 24         |
+| --------------- | ---------------- | ------------------ | ----------------------- | ------- | ------- | ------- | -------- | -------------- |
+| **Reading**     | GBE Hello-Switch | GBE Arrays-Methods | GBE Interfaces-Channels | LYH 1-2 | LYH 3-4 | LYH 5-6 | LYH 9-11 | RBE Hello-Flow |
+| **Language**    | Go               | Go                 | Go                      | Haskell | Haskell | Haskell | Haskell  | Rust           |
+| **Interpreter** | CI 1-3           | CI 4               | CI 5                    | CI 6    | CI 7    | CI 8    | CI 9     | CI 10          |
 
-| _(cont.)_    | Mar 2 | Mar 9 | Mar 16 | Mar 23 | Mar 30  | Apr 6   | Apr 13  |
-| ------------ | ----- | ----- | ------ | ------ | ------- | ------- | ------- |
-| **Reading**  | _SB_  | tbd   | tbd    | tbd    | tbd     | tbd     | tbd     |
-| **Language** | _SB_  | Rust  | Rust   | Rust   | Clojure | Clojure | Clojure |
-| **WAI**      | _SB_  | tbd   | tbd    | tbd    | tbd     | tbd     | tbd     |
+| _(cont.)_       | Mar 2 | Mar 9                 | Mar 16            | Mar 23           | Mar 30         | Apr 6            | Apr 13               |
+| --------------- | ----- | --------------------- | ----------------- | ---------------- | -------------- | ---------------- | -------------------- |
+| **Reading**     | _SB_  | RBE Functions-Scoping | RBE Traits-Stdlib | RBE Stdmisc-Meta | CBE Hello-Flow | CBE Boolean-Maps | CBE Sequences-Macros |
+| **Language**    | _SB_  | Rust                  | Rust              | Rust             | Clojure        | Clojure          | Clojure              |
+| **Interpreter** | _SB_  | CI 11                 | CI 12             | CI 13            | Flex           | Flex             | Flex                 |
 
-# License
+Reading Sources
+
+* [_Crafting Interpreters_](http://craftinginterpreters.com/contents.html) (CI)
+* [_Go By Example_](https://gobyexample.com/) (GBE)
+* [_Learn You a Haskell_](http://learnyouahaskell.com/chapters) (LYH)
+* [_Rust By Example_](https://doc.rust-lang.org/stable/rust-by-example/) (RBE)
+* [_Clojure By Example_](https://kimh.github.io/clojure-by-example/#about) (CBE)
+
+## Other Reading
+
+* [The Rust Book](https://doc.rust-lang.org/book/)
+
+## License
 
 This project is dual-licensed under the Unlicense and the Creative Commons Attribution 4.0
 International license. The [Unlicense](LICENSE_CODE) is for code, and the [Creative
