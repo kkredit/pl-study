@@ -53,5 +53,7 @@ Reading Sources
 ## License
 
 This project is dual-licensed under the Unlicense and the Creative Commons Attribution 4.0
-International license. The [Unlicense](LICENSE_CODE) is for code, and the [Creative
-Commons](LICENSE_DOCS) license is for documentation (markdown files, primarily).
+International license. Unless otherwise specified, the [Unlicense](LICENSE_CODE) is for code, and
+the [Creative Commons](LICENSE_DOCS) license is for documentation and the wiki.
+
+Because I am utilizing example code from other projects, see additional license notes in each file.
