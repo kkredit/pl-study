@@ -10,6 +10,7 @@ echo "Downloading $URL..."
 wget -q --show-progress $URL
 echo "Untarring $FILE into $INST_DIR..."
 sudo tar -C $INST_DIR -xzf $FILE
+rm $FILE
 
 if echo $PATH | grep -v "go/bin" &>/dev/null; then
     echo "Adding $INST_DIR/go/bin to ~/.profile..."
