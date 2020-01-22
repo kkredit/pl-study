@@ -1,0 +1,32 @@
+// Original author Mark McGranaghan
+// Modifications by Kevin Kredit
+// Licensed under https://creativecommons.org/licenses/by/3.0/
+
+// https://gobyexample.com/goroutines
+
+package main
+
+import (
+    "fmt"
+    "time"
+)
+
+func f(from string) {
+    for i := 0; i < 3; i++ {
+        fmt.Println(from, ":", i)
+    }
+}
+
+func main() {
+
+    f("direct")
+
+    go f("goroutine")
+
+    go func(msg string) {
+        fmt.Println(msg)
+    }("going")
+
+    time.Sleep(time.Second)
+    fmt.Println("done")
+}
