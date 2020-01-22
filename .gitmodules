@@ -1,3 +1,6 @@
 [submodule "puzzle"]
 	path = puzzle
 	url = https://github.com/kkredit/scramble-squares-solver
+[submodule "wiki"]
+	path = wiki
+	url = https://github.com/kkredit/pl-study.wiki.git
