@@ -13,7 +13,7 @@ default: remove_whitespaces $(CLASSES)
 
 # Remove trailing whitespaces that the website introduces
 remove_whitespaces: $(SOURCES)
-	@ sed -i 's/[ \t]*$$//' $(SOURCES)
+	./util/fix-up-java.sh $(SOURCES)
 
 # Compile a single .java file to .class.
 $(BUILD_DIR)/$(DIR)/%.class: $(DIR)/%.java
