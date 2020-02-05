@@ -49,6 +49,7 @@ Reading Sources
 ## Other Reading
 
 * [The Rust Book](https://doc.rust-lang.org/book/)
+* [Learn X in Y Minutes](https://learnxinyminutes.com/)
 
 ## License
 
