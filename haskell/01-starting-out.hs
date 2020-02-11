@@ -1,3 +1,8 @@
+-- Original author Miran Lipovaca
+-- Modifications by Kevin Kredit
+-- Licensed under https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+-- http://learnyouahaskell.com/starting-out
 
 module Main
   where
