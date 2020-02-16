@@ -28,5 +28,6 @@ main = putStrLn "This file meant to be loaded in GHCI"
 
 EOF
 
+    git add $FILE
     codium $FILE
 }
