@@ -2,7 +2,7 @@
  * Modifications by Kevin Kredit
  * Licensed under https://www.apache.org/licenses/LICENSE-2.0
  *
- * https://doc.rust-lang.org/stable/rust-by-example/print/debug.html
+ * https://doc.rust-lang.org/stable/rust-by-example/hello/print/debug.html
  */
 
 // Derive the `fmt::Debug` implementation for `Structure`. `Structure`

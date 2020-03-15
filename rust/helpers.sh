@@ -26,3 +26,10 @@ EOF
     git add $FILE
     codium $FILE
 }
+
+function run() {
+    LATEST=bin/$(ls -1t bin | head -1)
+    echo "RUNNING $LATEST:"
+    echo
+    ./$LATEST
+}
