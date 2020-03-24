@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Linux) Launch -- Rust",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/puzzle/rust/bin/puzzle_debug",
+            "args": [],
+            "cwd": "${workspaceRoot}/puzzle/rust",
+        }
+    ]
+}
