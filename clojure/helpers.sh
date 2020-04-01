@@ -1,24 +1,30 @@
 #!/bin/bash
 
+alias run='lein run'
+
 function nc() {
+    cd $(git rev-parse --show-toplevel)/clojure
     NAME=$1
     UNDER_NAME=${NAME//-/_}
     HYPHN_NAME=${UNDER_NAME//_/-}
 
     # PREFIX="00"
     for i in `seq -w 0 99`; do
-        ls | grep -q $i || (PREFIX="$i"; break)
+        if ! ls | grep -q $i; then
+          PREFIX="$i"
+          break
+        fi
     done
     CLOJ_NAME="p${PREFIX}-${HYPHN_NAME}"
     JAVA_NAME=${CLOJ_NAME//-/_}
 
-    lein new $PROJ_NAME
-    cd $PROJ_NAME
+    lein new $CLOJ_NAME
+    cd $CLOJ_NAME
     rm -rf CHANGELOG.md doc/ LICENSE README.md resources/ test/
 
     PROJECT_FILE=project.clj
     cat > $PROJECT_FILE <<EOF
-(defproject $PROJ_NAME "0.1.0-SNAPSHOT"
+(defproject $CLOJ_NAME "0.1.0-SNAPSHOT"
   :description "Clojure-by-example program for $NAME"
   :url "https://kimh.github.io/clojure-by-example/#$NAME"
   :license {:name "Apache License, Version 2.0"
@@ -37,9 +43,10 @@ EOF
 (ns $CLOJ_NAME.core)
 
 (defn -main
-  "I can say 'Hello World'."
+  "Main"
   []
-  (println "Hello, World!"))
+  (do
+    (println "Hello, World!")))
 EOF
     codium $SOURCE_FILE
 }
