@@ -1,6 +1,7 @@
 #!/bin/bash
 
 alias run='lein run'
+alias new='nc'
 
 function nc() {
     cd $(git rev-parse --show-toplevel)/clojure
@@ -45,8 +46,7 @@ EOF
 (defn -main
   "Main"
   []
-  (do
-    (println "Hello, World!")))
+  (println "Hello, World!"))
 EOF
     codium $SOURCE_FILE
 }
