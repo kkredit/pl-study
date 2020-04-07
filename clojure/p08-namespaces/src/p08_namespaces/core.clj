@@ -3,7 +3,10 @@
 ;; Licensed under https://www.apache.org/licenses/LICENSE-2.0
 ;; See https://kimh.github.io/clojure-by-example/#namespaces
 
-(ns p08-namespaces.core)
+; (import java.util.Date) ; Or, the more efficient version below
+
+(ns p08-namespaces.core
+  (:import [java.util Date]))
 
 (defn -main
   "Main"
@@ -16,4 +19,5 @@
   (println (favorite-language)) ; Works, because namespace is nested?
                                 ; Should fail I think, with "Error: Unable to resolve symbol"
                                 ; see https://kimh.github.io/clojure-by-example/#require
+  (println (new Date))
   )
