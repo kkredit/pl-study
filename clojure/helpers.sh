@@ -46,7 +46,8 @@ EOF
 (defn -main
   "Main"
   []
-  (println "Hello, World!"))
+  (println "Hello, World!")
+  )
 EOF
     codium $SOURCE_FILE
 }
