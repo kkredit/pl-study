@@ -2,8 +2,11 @@
 
 sudo apt-get install -y \
   curl \
-  rlwrap \
-  leiningen
+  rlwrap
+
+wget -q https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+chmod +x lein
+mv ~/bin/ lein
 
 which java || sudo apt-get install -y default-jdk
 
