@@ -11,6 +11,7 @@
      1 "n is 1"
      2 "n is 2"
      "n is other"))
+    ;; Case options must be compile-time literals https://clojuredocs.org/clojure.core/case
 
 (defn -main
   "Main"
