@@ -24,6 +24,16 @@ in this course will include:
 The plan outlined here is aspirational. As an independent study, my goal is to set my sights high
 and execute as much as I can.
 
+## Completion Update
+
+Going through _Crafting Interpreters_ in addition to learning each of these languages proved to be too much. However,
+see the results of the study on the wiki page, in the contents of this repo, and in particular through the following:
+
+- [Scramble Squares Solver](https://github.com/kkredit/scramble-squares-solver) -- a puzzle solver implemented in each
+    language
+- [Final Impressions](https://github.com/kkredit/pl-study/wiki/Final-Impressions) -- a summary of my lessons from the
+    study
+
 ## Schedule
 
 |                 | Jan 6            | Jan 13             | Jan 20                  | Jan 27  | Feb 3   | Feb 10  | Feb 17   | Feb 24         |
